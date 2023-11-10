@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         listItem.innerHTML = `
             <h2>${culto.id}</h2>
             <div class="iframe-container">
-                <iframe title="Culto ${culto.id}" src="${culto.culto}" width="800" height="600" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <iframe title="Culto ${culto.id}" src="${culto.culto}" style="border:none; overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
+                </div>
             <p class="dataAtual">Data: ${culto.dataAtual}</p>
         `;
         cultosList.appendChild(listItem);
