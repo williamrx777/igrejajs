@@ -1,0 +1,135 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+}
+
+.container_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    max-width: 100%;
+}
+
+.logo {
+    width: 75px;
+    border-radius: 10px;
+}
+
+.capitulo {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.items {
+    display: flex;
+    gap: 20px;
+    margin-right: 15px;
+    max-width: 100%;
+}
+
+.programation {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.horario {
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: white;
+}
+
+.container_main {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.container_aside {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.dataAtual {
+    color: white;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+}
+
+.face {
+    width: 50px;
+}
+
+.contato {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.items a {
+    text-decoration: none;
+    color: white;
+  }
+
+/* app.component.css */
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto; /* You may need to adjust this margin */
+    border: 4px solid rgba(255, 255, 255, 0.1); /* Border color for dark theme */
+    border-top: 4px solid #007bff; /* Top border color (your desired color) */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+/* Styles for the iframe container */
+.iframe-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive iframe */
+}
+
+/* Styles for the iframe */
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
